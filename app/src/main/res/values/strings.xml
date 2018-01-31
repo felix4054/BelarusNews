@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Belarus News</string>
+
+    <!--Alert Dialog-->
+    <string name="alert_title">Warning!</string>
+    <string name="alert_message">Not is load data. \nCheck your connection Internet!</string>
+    <string name="alert_positive">Close</string>
+
+    <!--Fragment Layout-->
+    <string name="all_news_fragment">All News</string>
+    <string name="politic_news_fragment">Politic News</string>
+    <string name="company_news_fragment">Compony News</string>
+    <string name="economics_news_fragment">Economics News</string>
+    <string name="event_news_fragment">Event News</string>
+    <string name="showbusiness_news_fragment">Show Business</string>
+
+
+
+
+
+    <!--Tab menu-->
+
+
+
+
+</resources>
