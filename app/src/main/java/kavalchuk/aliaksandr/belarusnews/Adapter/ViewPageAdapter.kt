@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter
  */
 
 class ViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
+
     private val mFragmentList = ArrayList<Fragment>()
     private val mFragmentTitleList = ArrayList<String>()
 

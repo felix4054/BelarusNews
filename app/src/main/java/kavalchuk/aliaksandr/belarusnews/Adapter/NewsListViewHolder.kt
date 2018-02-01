@@ -12,8 +12,9 @@ import kavalchuk.aliaksandr.belarusnews.Model.Item
 class NewsListViewHolder(internal var rootView: View, var items: Item? = null) : RecyclerView.ViewHolder(rootView) {
 
     companion object {
-//        val VIDEO_TITLE_KEY = "VIDEO_TITLE"
-//        val VIDEO_ID_KEY = "VIDEO_ID"
+
+        val ITEMS_LINK_KEY = "ITEMS_LINK_KEY"
+
     }
 
     init {

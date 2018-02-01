@@ -9,12 +9,7 @@ import kavalchuk.aliaksandr.belarusnews.Fragment.*
 import kavalchuk.aliaksandr.belarusnews.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-
-    override fun onClick(v: View?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
+class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,16 +18,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setSupportActionBar(tb_main)
         //supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         setupViewPager(vp_main)
+
         tabs_layout!!.setupWithViewPager(vp_main)
+
+//        supportFragmentManager.beginTransaction()
+//                .add(R.id.container, AllNewsFragment())
+//                .commit()
     }
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFrag(AllNewsFragment(), "All")
-        adapter.addFrag(PoliticNewsFragment(), "Politic")
-        adapter.addFrag(CompanyNewsFragment(), "Company")
-        adapter.addFrag(EconomicsNewsFragment(), "Economics")
-        adapter.addFrag(EventNewsFragment(), "Event")
+        adapter.addFrag(AllNewsFragment(), "Последние")
+        adapter.addFrag(PoliticNewsFragment(), "Политика")
+        adapter.addFrag(CompanyNewsFragment(), "Общество")
+        adapter.addFrag(EconomicsNewsFragment(), "Экономика")
+        adapter.addFrag(EventNewsFragment(), "Проишествия")
         viewPager.adapter = adapter
     }
 
